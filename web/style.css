@@ -1,0 +1,170 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Arial';
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.card, .result-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.result-card {
+    white-space: pre-line;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.bottom-nav button {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 13px;
+    color: #333;        
+    cursor: pointer;
+}
+
+.bottom-nav button:hover {
+    background-color: #f2f2f2;
+}
+#content {
+  max-width: 960px;     /* 데스크탑 기준 */
+  margin: 0 auto;       /*  가운데 정렬 */
+  padding: 16px;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.feed-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 16px;
+}
+
+.feed-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;       /* 🔥 핵심 */
+  border-radius: 8px;
+  flex-shrink: 0;          /* 이미지 찌그러짐 방지 */
+}
+.feed-info {
+  flex: 1;
+}
+
+.feed-badges {
+  margin-bottom: 6px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.badge-bcs {
+  background: #e74c3c;
+  color: white;
+}
+
+.badge-diet {
+  background: #f39c12;
+  color: white;
+}
+
+.feed-title {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.feed-price {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.feed-reason {
+  font-size: 13px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.feed-link {
+  font-size: 13px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.bottom-nav {
+  display: none;   /* 기본은 숨김 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
